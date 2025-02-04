@@ -193,7 +193,7 @@ Piece.prototype.lock = function () {
     scoreElement.innerHTML = score;
 }
 
-// collision fucntion
+// collision function
 Piece.prototype.collision = function (x, y, piece) {
     for (r = 0; r < piece.length; r++) {
         for (c = 0; c < piece.length; c++) {
@@ -235,24 +235,4 @@ function CONTROL(event) {
     } else if (event.keyCode == 39) {
         p.moveRight();
         dropStart = Date.now();
-    } else if (event.keyCode == 40) {
-        p.moveDown();
-    }
-}
-
-// drop the piece every 1sec
-let dropStart = Date.now();
-let gameOver = false;
-function drop() {
-    let now = Date.now();
-    let delta = now - dropStart;
-    if (delta > 1000) {
-        p.moveDown();
-        dropStart = Date.now();
-    }
-    if (!gameOver) {
-        requestAnimationFrame(drop);
-    }
-}
-
-drop();
+    } else if (event.keyCode ==[_{{{CITATION{{{_1{](https://github.com/buribalazs/smooth-drag-order/tree/7b40d21d076c3e31765f61481f537beaf4c5ec9f/README.md)[_{{{CITATION{{{_2{](https://github.com/Michael-Mend/Michael-Mend.github.io/tree/529e697e8d47fccc64d7b60887deadc1bc535f21/assets%2Fjs%2Ftetris.js)[_{{{CITATION{{{_3{](https://github.com/eminvergil/eminvergil.github.io/tree/5662910a5c806ba0981cf9c3308fb65b7a0c6e2d/tetris%2Ftetris.js)[_{{{CITATION{{{_4{](https://github.com/beckermath/games/tree/f81e8acf29c8a2a8f888e3839fd5e5a4cabe10eb/tetris%2Ftetris.js)[_{{{CITATION{{{_5{](https://github.com/YavuzSelimGugen/advanced_homework/tree/073bf280ef9c811a1b62632dc256e6553dc22358/Tetris%2Ftetris.js)[_{{{CITATION{{{_6{](https://github.com/kscao/tetris-starter/tree/4df313effafe5d77bab37fd3719572b6d063b705/tetris.js)[_{{{CITATION{{{_7{](https://github.com/seungyeop-lee/tetris/tree/71b681529218a1b5b3800bb60766fdc3c754f8ef/example-tetris%2Ftetris.js)[_{{{CITATION{{{_8{](https://github.com/CerchiaCorneliu/006.TetrisGame/tree/fd5e16e432a40d5350b720003aafeb152bffb35a/tetris.js)
